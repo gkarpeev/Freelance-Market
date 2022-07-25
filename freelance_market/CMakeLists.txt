@@ -1,0 +1,40 @@
+set(SOURCE_PROJECT
+        src/states/EntranceMenu.cpp
+        src/states/MainMenuHandlers/AcceptProposalHandler.cpp
+        src/states/MainMenuHandlers/DeclineProposalHandler.cpp
+        src/states/MainMenuHandlers/CreateProposalHandler.cpp
+        src/states/MainMenuHandlers/CompleteOrderHandler.cpp
+        src/states/MainMenuHandlers/ShowProposalsHandler.cpp
+        src/states/MainMenuHandlers/ShowMyProposalsHandler.cpp
+        src/states/MainMenuHandlers/ShowMyOrdersHandler.cpp
+        src/states/MainMenuHandlers/ShowTakenOrdersHandler.cpp
+        src/states/MainMenuHandlers/CreateOrderHandler.cpp
+        src/states/MainMenuHandlers/MainMenuHandler.cpp
+        src/states/MainMenuHandlers/RateFreelancerHandler.cpp
+        src/states/MainMenuHandlers/LogOutHandler.cpp
+        src/states/MainMenuHandlers/RateClientHandler.cpp
+        src/states/MainMenuHandlers/FreelancerMenuHandler.cpp
+        src/states/MainMenuHandlers/ShowAvailableOrdersHandler.cpp
+        src/states/MainMenuHandlers/ClientMenuHandler.cpp
+        src/states/EntranceMenuHandlers/EntranceHandler.cpp
+        src/states/EntranceMenuHandlers/CompanySignUpHandler.cpp
+        src/states/EntranceMenuHandlers/SignUpHandler.cpp
+        src/states/EntranceMenuHandlers/LogInHandler.cpp
+        src/states/EntranceMenuHandlers/PersonSignUpHandler.cpp
+        src/states/EntranceMenuHandlers/FreelancerLogInHandler.cpp
+        src/states/EntranceMenuHandlers/ClientLogInHandler.cpp
+        src/states/EntranceMenuHandlers/FreelancerSignUpHandler.cpp
+        src/states/EntranceMenuHandlers/AuthorizationHandler.cpp
+        src/states/EntranceMenuHandlers/ValidPasswordHandler.cpp
+        src/states/EntranceMenuHandlers/ClientSignUpHandler.cpp
+        src/states/EntranceMenuHandlers/AccountCreationHandler.cpp
+        src/states/EntranceMenuHandlers/UserExistHandler.cpp
+        src/states/MainMenu.cpp
+        src/FreelanceMarket.cpp
+        )
+
+add_library(FrilanceMarketLib STATIC ${SOURCE_PROJECT})
+target_link_libraries(FrilanceMarketLib PUBLIC
+        StateLib
+        HandlerLib
+        )
